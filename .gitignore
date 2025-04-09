@@ -1,6 +1,0 @@
-.dja-env/
-backend/core/__pycache__
-backend/db.sqlite3
-backend/kasir/__pycache__
-backend/kasir/migrations/__pycache__
-run
