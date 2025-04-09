@@ -4,6 +4,6 @@ from .serializers import (CartSerializers, ProductSerializers,
                           CategorySerializers, TransactionySerializers,
                           DetailTransactionSerializers)
 
-class ProductList(generics.ListCreateAPIView):
+class ProductListView(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializers
