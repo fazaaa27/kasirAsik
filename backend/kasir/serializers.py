@@ -20,7 +20,7 @@ class CategorySerializers(serializers.ModelSerializer):
         fields = ["id", "name"]
 
 
-class TransactionySerializers(serializers.ModelSerializer):
+class TransactionSerializers(serializers.ModelSerializer):
     class Meta:
         model = Transaction
         fields = ["id", "date", "amount"]
