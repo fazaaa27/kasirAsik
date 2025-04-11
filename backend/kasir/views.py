@@ -9,3 +9,9 @@ class ProductListView(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializers
     permission_classes = [IsAuthenticated]
+
+class ProductRetrieveView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializers
+    lookup_url_kwarg = "product_id"
+    permission_classes = [IsAuthenticated]
