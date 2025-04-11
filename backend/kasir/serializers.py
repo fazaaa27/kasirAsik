@@ -29,4 +29,4 @@ class TransactionSerializers(serializers.ModelSerializer):
 class DetailTransactionSerializers(serializers.ModelSerializer):
     class Meta:
         model = DetailTransaction
-        fields = ["id", "transactrion", "product", "amount"]
+        fields = ["id", "transaction", "product", "amount"]
